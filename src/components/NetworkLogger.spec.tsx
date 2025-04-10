@@ -16,7 +16,7 @@ jest.mock('../loggerSingleton', () => ({
   disableXHRInterception: jest.fn(),
 }));
 jest.mock('react-native/Libraries/Blob/FileReader', () => ({}));
-jest.mock('react-native/Libraries/Network/XHRInterceptor', () => ({
+jest.mock('react-native/src/private/inspector/XHRInterceptor', () => ({
   isInterceptorEnabled: jest.fn(),
   setOpenCallback: jest.fn(),
   setRequestHeaderCallback: jest.fn(),

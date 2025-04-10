@@ -1,5 +1,5 @@
 // https://github.com/facebook/react-native/blob/main/packages/react-native/Libraries/Network/XHRInterceptor.js
-declare module 'react-native/Libraries/Network/XHRInterceptor' {
+declare module 'react-native/src/private/inspector/XHRInterceptor' {
   export function isInterceptorEnabled(): boolean;
   export function setOpenCallback(...props: any): void;
   export function setRequestHeaderCallback(...props: any): void;
