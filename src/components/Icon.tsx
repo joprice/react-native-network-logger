@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { ComponentProps, Fragment } from 'react';
 import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Theme, useThemedStyles } from '../theme';
 
@@ -18,7 +18,7 @@ type ButtonProps =
   | ({
       onPress: () => void;
       accessibilityLabel: string;
-    } & TouchableOpacity['props']);
+    } & ComponentProps<typeof TouchableOpacity>);
 
 const Icon = ({
   name,

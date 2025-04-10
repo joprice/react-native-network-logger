@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import {
   TouchableOpacity,
   Text,
@@ -15,7 +15,7 @@ type Props = {
   onPress: () => void;
   style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
-} & TouchableOpacity['props'];
+} & ComponentProps<typeof TouchableOpacity>;
 
 const Button: React.FC<Props> = ({
   children,
